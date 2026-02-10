@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisekelo Zwane</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">SZ</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Professional Exposure</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container home-content">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="assets/headshot.jpg" alt="Sisekelo Zwane">
+                </div>
+                <div class="profile-info">
+                    <h1>Sisekelo Zwane</h1>
+                    <h3>BSc Information Technology Graduate</h3>
+                    <div class="location-info">
+                        <span><i class="fas fa-map-marker-alt"></i> Mbabane, Eswatini</span>
+                    </div>
+                </div>
+            </div>
+            <p class="description">
+                I am a Bachelor of Science in Information Technology graduate with a strong aptitude for analytical thinking, 
+                passionate about using technology to solve real-world problems and empowering communities.
+                I am dedicated to creating innovative solutions that enhance security, optimize processes, 
+                and drive digital transformation.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i> View Projects
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (Compact) -->
+    <section id="skills" class="skills">
+        <div class="container section-content">
+            <h2 class="section-title fade-in">Technical Skills</h2>
+            
+            <div class="skills-compact-grid">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Software Development & Tools</h3>
+                    <p>Python, SQL, JavaScript, HTML/CSS, Flutter (Dart), Git, CI/CD Pipelines, Streamlit, FastAPI</p>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                    <p>Incident Response, Threat Analysis, Firewall Configuration, Vulnerability Assessment, SIEM Concepts, Cybersecurity Policy, Risk Assessment, Wireshark, Nmap</p>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-chart-line"></i> Data & AI</h3>
+                    <p>TensorFlow, Scikit-learn, Pandas, Power BI, Google Gemini API, Cosine Similarity</p>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-server"></i> Networks & Infrastructure</h3>
+                    <p>Linux (Rocky/Ubuntu), Windows Server, Active Directory, Docker, VPN, Apache, DHCP, DNS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section  -->
+    <section id="projects" class="projects">
+        <div class="container section-content">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <p class="section-subtitle fade-in">Hands-on experience through academic research and real-world applications</p>
+            
+            <div class="projects-compact-grid">
+                <!-- Project 1: HackBlock -->
+                <div class="project-card-compact fade-in">
+                    <div class="project-preview">
+                        <div class="project-image-small">
+                            <img src="assets/logo.png" alt="HackBlock Mobile App">
+                        </div>
+                    </div>
+                    <div class="project-info-compact">
+                        <div class="project-header-compact">
+                            <i class="fas fa-gamepad project-icon"></i>
+                            <h3>HackBlock: Gamified Cybersecurity Learning</h3>
+                        </div>
+                        <p class="project-description-compact">
+                            Flutter-based mobile app for cybersecurity education through gamified learning. Honors research project.
+                        </p>
+                        <div class="tech-tags-compact">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">CI/CD</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-view-screenshots" data-project="hackblock">
+                                <i class="fas fa-images"></i> View Project
+                            </button>
+                            <button class="btn-project-details" data-project="hackblock">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: SaaS Chatbot -->
+                <div class="project-card-compact fade-in">
+                    <div class="project-preview">
+                        <div class="project-image-small">
+                            <img src="https://via.placeholder.com/300x600/0f172a/0ea5e9?text=AI+Chatbot" alt="SaaS Chatbot">
+                        </div>
+                    </div>
+                    <div class="project-info-compact">
+                        <div class="project-header-compact">
+                            <i class="fas fa-robot project-icon"></i>
+                            <h3>SaaS Chatbot with Gemini API</h3>
+                        </div>
+                        <p class="project-description-compact">
+                            Full-stack SaaS platform with Google Gemini AI, multi-user subscriptions, and responsive web UI built with HTML/CSS/JavaScript.
+                        </p>
+                        <div class="tech-tags-compact">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Gemini AI</span>
+                            <span class="tech-tag">HTML/CSS/JS</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-project-details" data-project="chatbot">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Cybersecurity Threat Analysis -->
+                <div class="project-card-compact fade-in">
+                    <div class="project-preview">
+                        <div class="project-image-small">
+                            <img src="assets/forage.png" alt="Cybersecurity Threat Analysis">
+                        </div>
+                    </div>
+                    <div class="project-info-compact">
+                        <div class="project-header-compact">
+                            <i class="fas fa-shield-alt project-icon"></i>
+                            <h3>Cybersecurity Threat Analysis & Remediation</h3>
+                        </div>
+                        <p class="project-description-compact">
+                            Threat analysis simulation, CISA vulnerability research, and Python ethical hacking script for decryption.
+                        </p>
+                        <div class="tech-tags-compact">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">CISA</span>
+                            <span class="tech-tag">Threat Analysis</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-view-screenshots" data-project="threatanalysis">
+                                <i class="fas fa-images"></i> View Details
+                            </button>
+                            <button class="btn-project-details" data-project="threatanalysis">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: E-Commerce -->
+                <div class="project-card-compact fade-in">
+                    <div class="project-preview">
+                        <div class="project-image-small">
+                            <img src="assets/nmap.png" alt="E-Commerce Platform">
+                        </div>
+                    </div>
+                    <div class="project-info-compact">
+                        <div class="project-header-compact">
+                            <i class="fas fa-shopping-cart project-icon"></i>
+                            <h3>Secure E-Commerce Platform</h3>
+                        </div>
+                        <p class="project-description-compact">
+                            Secure online marketplace with 3-server infrastructure and comprehensive security measures.
+                        </p>
+                        <div class="tech-tags-compact">
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Windows</span>
+                            <span class="tech-tag">Security</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-project-details" data-project="ecommerce">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div class="project-modal-overlay" id="projectModal">
+        <div class="project-modal">
+            <button class="project-modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="project-modal-content" id="modalContent">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div class="certificate-modal-overlay" id="certificateModal">
+        <div class="certificate-modal">
+            <button class="certificate-modal-close" id="certificateClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="certificate-modal-content" id="certificateContent">
+                <h3 id="certificateTitle"></h3>
+                <div class="certificate-image-container">
+                    <img id="certificateImage" src="" alt="Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screenshots Gallery Modal -->
+    <div class="gallery-modal-overlay" id="galleryModal">
+        <div class="gallery-modal">
+            <button class="gallery-modal-close" id="galleryClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="gallery-main-image">
+                <img id="galleryImage" src="" alt="">
+            </div>
+            <div class="gallery-thumbnails-container">
+                <div class="gallery-thumbnails" id="galleryThumbnails">
+                    <!-- Thumbnails loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Section (Updated) -->
+    <section id="experience" class="experience">
+        <div class="container section-content">
+            <h2 class="section-title fade-in">Professional Exposure</h2>
+            
+            <div class="experience-grid">
+                <!-- Work Experience -->
+                <div class="work-experience">
+                    <h3>Professional Experience</h3>
+                    <div class="work-timeline">
+                        <div class="work-timeline-item">
+                            <div class="work-timeline-date">2025</div>
+                            <div class="work-timeline-content">
+                                <h4>Web Developer</h4>
+                                <p class="work-timeline-org">ETPW Conference, University of Namibia</p>
+                                <p class="work-timeline-desc">Designed and developed website for the International conference on Emerging Trends in Psychosocial Wellbeing (ETPW) </p>
+                            </div>
+                        </div>
+                        <div class="work-timeline-item">
+                            <div class="work-timeline-date">2023-2025</div>
+                            <div class="work-timeline-content">
+                                <h4>Blue Team Member </h4>
+                                <p class="work-timeline-org">Namibia Cybersecurity Competition</p>
+                                <p class="work-timeline-desc">Analyzed attack data, mitigated threats,drafted policies using NIST framework in a simulated Security Operations Centre</p>
+                            </div>
+                        </div>
+                        <!--<div class="work-timeline-item">
+                            <div class="work-timeline-date">2024</div>
+                            <div class="work-timeline-content">
+                                <h4>Cybersecurity Threat Analysis</h4>
+                                <p class="work-timeline-org">Cyber Defense Unit Simulation</p>
+                                <p class="work-timeline-desc">Analyzed CISA vulnerabilities, drafted remediation guidance, developed ethical hacking scripts</p>
+                            </div>
+                        </div>-->
+                        <div class="work-timeline-item">
+                            <div class="work-timeline-date">2024</div>
+                            <div class="work-timeline-content">
+                                <h4>STEM Leader</h4>
+                                <p class="work-timeline-org">WAAW Foundation</p>
+                                <p class="work-timeline-desc">Mentored 50+ high school students in STEM careers</p>
+                                <p class="work-timeline-desc">Designed and delivered a foundational curriculum in HTML and CSS, enabling high school students to build and publish their own static websites</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education (Separate Section) -->
+                <div class="education-section">
+                    <h3>Education</h3>
+                    <div class="education-cards">
+                        <div class="education-card">
+                            <div class="edu-header">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4 class="edu-degree">BSc IT (Hons)</h4>
+                                    <p class="edu-org">University of Namibia</p>
+                                    <p class="edu-period"><i class="far fa-calendar"></i> 2023-2025</p>
+                                </div>
+                            </div>
+                            <p class="edu-desc">Certificates of Excellence: Systems Administration, Platform Technologies</p>
+                            <div class="edu-achievements">
+                                <span class="edu-badge">Honors Program</span>
+                                <span class="edu-badge">Academic Excellence</span>
+                            </div>
+                        </div>
+                        <div class="education-card">
+                            <div class="edu-header">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4 class="edu-degree">BSc IT (Years 1-2)</h4>
+                                    <p class="edu-org">University of Eswatini</p>
+                                    <p class="edu-period"><i class="far fa-calendar"></i> 2020-2022</p>
+                                </div>
+                            </div>
+                            <p class="edu-desc">Database Design, Management Information Systems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications-compact fade-in">
+                <h3>Certifications</h3>
+                <div class="certs-grid">
+                    <div class="cert-badge" data-cert="cisco-cyberops">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Cisco CyberOps Associate</span>
+                    </div>
+                    <div class="cert-badge" data-cert="cisco-intro-cybersecurity">
+                        <i class="fas fa-lock"></i>
+                        <span>Cisco Introduction to Cybersecurity</span>
+                    </div>
+                    <div class="cert-badge" data-cert="aws-generative-ai">
+                        <i class="fas fa-robot"></i>
+                        <span>Generative AI with AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Compact) -->
+    <section id="contact" class="contact">
+        <div class="container section-content">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            
+            <div class="contact-compact-grid">
+                <div class="contact-info-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:sisekelozwane13@gmail.com">sisekelozwane13@gmail.com</a>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <h3>Phone</h3>
+                    <a href="tel:+26876174799">+268 7617 4799</a>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fab fa-linkedin-in contact-icon"></i>
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/sisekelo-zwane" target="_blank">linkedin.com/in/sisekelo-zwane</a>
+                </div>
+                <!--<div class="contact-info-card">
+                    <i class="fas fa-search contact-icon"></i>
+                    <h3>Status</h3>
+                    <p>Seeking Opportunities</p>
+                </div>-->
+            </div>
+            
+            <!--<div class="social-links-compact">
+                <a href="https://linkedin.com/in/sisekelo-zwane" class="social-link" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>-->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sisekelo Zwane. All rights reserved.</p>
+            <!--<p><i class="fas fa-heart"></i> Built with passion for technology</p>-->
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/modals.js"></script>
+</body>
+</html>
